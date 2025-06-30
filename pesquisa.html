@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Supermercado Boa Praça">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/tooltips.css">
+    <link rel="stylesheet" href="./css/menus.css">
+    <link rel="stylesheet" href="./css/pesquisa.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>PESQUISAR PRODUTOS</title>
+    <script src="./js/pesquisar-produtos.js"></script>
+</head>
+
+<body>
+
+    <div class="cabecalho" id="topo">
+        <img src="./img/favicon.png" alt="Logo" class="logo" onclick="a()">
+        <h1>SUPERMERCADO BOA PRAÇA</h1>
+
+        <div class="login"><!--BOTOES DE LOGIN-->
+            <h5 class="tooltip">LOGIN <span class="tooltip-text">Fazer login</span></h5>
+            <hr style="width: 0; height: 15px; align-self: center;">
+            <h5 class="tooltip">CRIAR CONTA <span class="tooltip-text">Criar conta agora</span></h5>
+        </div>
+
+    </div>
+
+    <div class="menu"><!--MENU ABAIXO DO CABECALHO-->
+        <a href="index.html" target="_self">HOME</a>
+        <a href="" target="_self">DELIVERY</a>
+        <a href="#rodape" target="_self">SOBRE</a>
+        <a href="" class="mais">MAIS
+            <span class="menu-mais">
+                <table>
+                    <dl>
+                        <dt>ATENDIMENTO</dt>
+                        <dt>FUNCIONARIOS</dt>
+                        <dt>INFRAESTRUTURA</dt>
+                    </dl>
+                </table>
+            </span>
+        </a>
+    </div>
+
+    <div class="conteudo"><!--CONTEUDO DA PAGINA-->
+
+        <div id="barra-pesquisa">
+            <div id="fundo">
+                <img src="./img/pesquisar288px.png" alt="icon" width="25px">
+                <input type="text" name="Pesquise um produto: nome, marca" id="input-pesquisar"
+                    placeholder="Pesquisar um produto: nome, marca" autofocus onkeyup="procurar()">
+            </div>
+        </div>
+
+        <div class="campo-dos-produtos">
+
+            <!-- PRODUTOS INICIO -->
+
+            <div class="produtos">
+                
+
+                <div class="0 itens">
+                    <div>
+                        <img src="./img/produto.PNG" alt="produto" width="100px">
+                    </div>
+                    <div>
+                        <p>ITEM 0 ESTÁ AQUI</p>
+                        <a href="">ITEM 0</a>
+                    </div>
+                </div>
+
+                <div class="maria itens">
+                    <div>
+                        <img src="./img/produto.PNG" alt="produto" width="100px">
+                    </div>
+                    <div>
+                        <p>ITEM 0 ESTÁ AQUI</p>
+                        <a href="">MARIA A VENDA!!!</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PRODUTOS FINAL -->
+
+            <div id="nao-encontrado"><!-- MENSAGEM DE ITEM NÃO ENCONTRADO -->
+                <p>Nenhum produto encontrado</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- FIM CONTEUDO DA PAGINA -->
+
+    <div class="ir-topo">
+        <a href="#topo" id="topo-pagina-btn">
+            <img src="./img/ir-topo.png" alt="topo" style="width: 20px; height: auto;" id="seta">
+            VOLTAR AO TOPO
+            <img src="./img/ir-topo.png" alt="topo" style="width: 20px; height: auto;" id="seta">
+        </a>
+    </div>
+
+    <div class="rodape" id="rodape"><!-- RODAPE -->
+
+        <div class="redes"><!-- REDES SOCIAIS -->
+            <a href=""><img src="./img/face.png" alt="facebook"></a>
+            <hr style="width: 0; height: 15px; align-self: center; opacity: 50%">
+            <a href=""><img src="./img/insta.png" alt="instagram"></a>
+            <hr style="width: 0; height: 15px; align-self: center; opacity: 50%">
+            <a href="https://wa.me/+553399877162" target="_blank"><img src="./img/whats.png" alt="whatsapp"></a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
